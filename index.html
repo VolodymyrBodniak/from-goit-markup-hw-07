@@ -75,7 +75,7 @@
       <!-- Section 1 -->
       <section class="features">
         <div class="container">
-          <h2 class="features-title section-title">Features</h2>
+          <h2 class="section-title visually-hiden">Features</h2>
           <ul class="features-list list">
             <li class="features-item">
               <div class="feature-icon">
@@ -135,21 +135,60 @@
           <h2 class="job section-title">What are we doing</h2>
           <ul class="our-job-list list">
             <li class="our-job-item">
-              <img src="./images/img1.jpg" alt="monitor screen" width="360" />
+              <picture>
+                <source
+                  srcset="./images/img1.webp 1x, ./images/img1@2x.webp 2x"
+                  media="(min-width: 1158px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+
+                <img src="./images/img1.jpg" alt="monitor screen" width="360" />
+              </picture>
             </li>
             <li class="our-job-item">
-              <img
-                src="./images/img2.jpg"
-                alt="mobile tel screens"
-                width="360"
-              />
+              <picture>
+                <source
+                  srcset="./images/img2.webp 1x, ./images/img2@2x.webp 2x"
+                  media="(min-width: 1158px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+
+                <img
+                  src="./images/img2.jpg"
+                  alt="mobile tel screens"
+                  width="360"
+                />
+              </picture>
             </li>
             <li class="our-job-item">
-              <img
-                src="./images/img3.jpg"
-                alt="telephone in hand"
-                width="360"
-              />
+              <picture>
+                <source
+                  srcset="./images/img3.webp 1x, ./images/img3@2x.webp 2x"
+                  media="(min-width: 1158px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+
+                <img
+                  src="./images/img3.jpg"
+                  alt="telephone in hand"
+                  width="360"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -162,6 +201,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="./images/team1@2x.jpg 2x"
                 src="./images/team1.jpg"
                 alt="Product Designer"
                 width="264"
@@ -203,6 +243,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team2@2x.jpg 2x"
                 src="./images/team2.jpg"
                 alt="Frontend Developer"
                 width="264"
@@ -243,7 +284,12 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/team3.jpg" alt="Marketing" width="264" />
+              <img
+                srcset="./images/team3@2x.jpg 2x"
+                src="./images/team3.jpg"
+                alt="Marketing"
+                width="264"
+              />
               <h3 class="team-item description-title">Camila Garcia</h3>
               <p class="text">Marketing</p>
               <div class="social-links">
@@ -280,7 +326,12 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/team4.jpg" alt="UI Designer" width="264" />
+              <img
+                srcset="./images/team4@2x.jpg 2x"
+                src="./images/team4.jpg"
+                alt="UI Designer"
+                width="264"
+              />
               <h3 class="team-item description-title">Daniel Wilson</h3>
               <p class="text">UI Designer</p>
               <div class="social-links">

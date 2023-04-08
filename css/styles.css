@@ -165,27 +165,6 @@ button {
   color: var(--pressed);
 }
 
-/* .site-nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--pressed);
-  opacity: 0;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav-link:hover::after,
-.site-nav-link:focus::after {
-  opacity: 1;
-} */
-
 .contact {
   margin-left: auto;
   font-style: normal;
@@ -218,6 +197,8 @@ button {
 
 /* hero image */
 
+/* Adaptive */
+
 .hero-image {
   margin: 0 auto;
   padding: 188px 0;
@@ -227,7 +208,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -237,14 +218,76 @@ button {
   text-align: center;
 }
 
+/* screen 2x + 0px - 767px */
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob@2x.jpg);
+  }
+}
+
+/* 768px + */
+@media screen and (min-width: 768px) {
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tablet.jpg);
+  }
+}
+
+/* screen 2x + 768px + */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tablet@2x.jpg);
+  }
+}
+
+/* 1200px + */
+@media screen and (min-width: 1200px) {
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+}
+
+/* 2x + 1200px + screen */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg@2x.jpg);
+  }
+}
+
 .hero-text {
-  width: 496px;
+  max-width: 320px;
   margin: 0 auto;
 
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 /* button */
@@ -310,19 +353,6 @@ button {
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-
-.features-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .features-list {
@@ -624,19 +654,6 @@ button {
 .portfolio-hero {
   padding-top: 96px;
   padding-bottom: 120px;
-}
-
-.portfolio-main {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* portfolio nav */
@@ -951,25 +968,3 @@ button {
   background-color: var(--pressed);
   border-color: transparent;
 }
-
-/* .modal-form-check-descr::before {
-  content: " ";
-  display: block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.modal-form-check:checked + .modal-form-check-descr::before {
-  background-image: url(../images/click-icon.svg);
-  background-position: center;
-}
-
-.modal-form-check:focus + .modal-form-check-descr::before {
-  outline: none;
-  border-color: var(--pressed);
-  background-image: url(../images/click-icon.svg);
-  background-position: center;
-} */
