@@ -109,3 +109,30 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+/* Portfolio */
+
+.portfolio-hero {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.button-portfolio {
+  padding: 12px 24px;
+}
+
+.portfolio-nav {
+  margin-bottom: 64px;
+  justify-content: center;
+}
+
+.portfolio-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+.portfolio-list > .portfolio-item {
+  flex-basis: calc((100% - 24px) / 2);
+}

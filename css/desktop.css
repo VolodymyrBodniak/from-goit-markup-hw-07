@@ -86,3 +86,23 @@
 .footer-subscribe-form {
   margin-left: 80px;
 }
+
+/* Portfolio */
+
+.portfolio-hero {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-nav {
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-list > .portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
