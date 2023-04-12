@@ -19,6 +19,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/desktop.css"
+      media="screen and (min-width: 1158px)"
+    />
   </head>
   <body>
     <!-- Top line -->
@@ -26,7 +36,7 @@
       <div class="container">
         <div class="nav-box">
           <nav class="navigation">
-            <a href="./index.html" class="logo link"
+            <a href="./index.html" class="logo link header-logo"
               >Web<span class="decoration-color">Studio</span></a
             >
             <ul class="site-nav list">
@@ -45,7 +55,11 @@
               </li>
             </ul>
           </nav>
-
+          <button type="button" class="mobile-menu-open" data-menu-open>
+            <svg class="mobile-menu-open-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
           <address class="contact">
             <ul class="contact-list list">
               <li class="contact-item">
@@ -60,6 +74,82 @@
               </li>
             </ul>
           </address>
+        </div>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <nav class="contact-mobile">
+            <ul class="site-nav-mobile list">
+              <li class="site-nav-item-mobile">
+                <a href="./index.html" class="site-nav-link-mobile link"
+                  >Studio</a
+                >
+              </li>
+              <li class="site-nav-item-mobile">
+                <a href="./portfolio.html" class="site-nav-link-mobile link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="site-nav-item-mobile">
+                <a href="" class="site-nav-link-mobile link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contact-mobile">
+            <ul class="contact-list-mobile list">
+              <li class="contact-item-mobile">
+                <a
+                  href="tel:+110001111111"
+                  class="contact-link-mobile link mob-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="contact-item-mobile">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact-link-mobile link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-social-links">
+            <ul class="mobile-social-list list">
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">
+                  <svg class="mobile-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -83,7 +173,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="description-title">Strategy</h3>
+              <h3 class="description-title feature-descr-title">Strategy</h3>
               <p class="features-text text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -95,7 +185,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="description-title">Punctuality</h3>
+              <h3 class="description-title feature-descr-title">Punctuality</h3>
               <p class="features-text text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -107,7 +197,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="description-title">Diligence</h3>
+              <h3 class="description-title feature-descr-title">Diligence</h3>
               <p class="features-text text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -119,7 +209,9 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="description-title">Technologies</h3>
+              <h3 class="description-title feature-descr-title">
+                Technologies
+              </h3>
               <p class="features-text text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -574,7 +666,7 @@
         </form>
       </div>
     </div>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/madal.js"></script>
   </body>
 </html>
