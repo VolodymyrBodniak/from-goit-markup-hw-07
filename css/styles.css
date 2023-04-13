@@ -853,8 +853,7 @@ button {
 /* portfolio nav */
 
 .portfolio-nav {
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 380px;
   margin-bottom: 48px;
   display: flex;
   flex-wrap: wrap;
