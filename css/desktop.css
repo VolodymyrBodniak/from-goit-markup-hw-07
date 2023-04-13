@@ -15,6 +15,10 @@
 .contact-link {
   padding-top: 24px;
   padding-bottom: 24px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* hero image */
@@ -73,6 +77,7 @@
 }
 
 .footer-content {
+  width: 1158px;
   flex-wrap: nowrap;
   gap: 0;
   padding-left: 15px;
